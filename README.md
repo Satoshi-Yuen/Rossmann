@@ -1,5 +1,5 @@
 # 基于 🦜🔗 Langchain 的 Rossmann 店铺营业额归因分析
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/streamlit-agent?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Satoshi-Yuen/Rossmann.git)
 
 本次分析是基于 Kaggle 比赛：[Rossmann Store Sales](https://www.kaggle.com/c/rossmann-store-sales/) 提供的数据集进行的。具体是一个包含机器学习模型分析和 Agent 分析的 streamlit 程序。
 ![]([streamlit.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/streamlit.PNG?raw=true))

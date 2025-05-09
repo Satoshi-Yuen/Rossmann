@@ -2,7 +2,7 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Satoshi-Yuen/Rossmann.git)
 
 本次分析是基于 Kaggle 比赛：[Rossmann Store Sales](https://www.kaggle.com/c/rossmann-store-sales/) 提供的数据集进行的。具体是一个包含机器学习模型分析和 Agent 分析的 streamlit 程序。
-![]([streamlit.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/streamlit.PNG?raw=true))
+![streamlit.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/streamlit.PNG?raw=true)
 
 **基本环境设置如下**：
 Linux
@@ -18,9 +18,9 @@ streamlit 1.30.0
 ## 具体流程
 1. 输入训练数据文件，附加数据文件和字段解释文件并读取数据。
 2. 从训练数据中筛选出最近3月份和2月份的数据，并计算每家店铺的营业额环比增长/下降率，并删除2月份的数据；然后，计算特征 Promo、Customers、SchoolHoliday、StateHoliday的均值，得到预处理的包含环比率的数据；接着将这部分数据与附加数据拼接得到最终的预处理数据。下图是处理后的部分数据展示：
-![]([data.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/data.PNG?raw=true))
+![data.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/data.PNG?raw=true)
 3. 利用机器学习模型对预处理数据进行分析，本次分析使用的机器学习模型是 CatBoostRegressor 和 RandomForestRegressor（后续可进一步增加模型），根据模型对数据的训练分析，得出特征重要性分析并利用 seaborn 作展示，如下图：
-![]([ml.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/ml.PNG?raw=true))
+![ml.png](https://github.com/Satoshi-Yuen/Rossmann/blob/main/ml.PNG?raw=true)
 4. 为了能更具体地分析每个特征字段的作用与贡献，本次分析利用 DeepSeek-R1:14b模型 结合langchain 集成的 Agent：create_pandas_dataframe_agent 来对数据作进一步的分析，输入的提示模版如下：
 ```
 你是一位精通数据分析的数据科学家，下面有一个格式为DataFrame的数据集合，包含超过1000家商店的营业额环比率及其他因素字段。
